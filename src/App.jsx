@@ -1,19 +1,19 @@
 import { Admin, Resource } from 'react-admin';
 import dataProvider from './dataProvider';
 import authProvider from './authProvider';
-import CharactersList from './components/Characters/List';
-import CharactersEdit from './components/Characters/Edit';
-import CharactersPost from './components/Characters/Post';
+import GalleryList from './components/Gallery/List';
+import GalleryEdit from './components/Gallery/Edit';
+import GalleryPost from './components/Gallery/Post';
 
 function App() {
   return (
     <div className="App">
       <Admin authProvider={authProvider} dataProvider={dataProvider}>
         <Resource
-          name="characters"
-          list={CharactersList}
-          edit={CharactersEdit}
-          create={CharactersPost}
+          name="gallery"
+          list={GalleryList}
+          edit={GalleryEdit}
+          create={GalleryPost}
         />
       </Admin>
     </div>
